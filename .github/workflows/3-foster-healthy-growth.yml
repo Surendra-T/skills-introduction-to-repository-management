@@ -44,7 +44,7 @@ jobs:
         continue-on-error: true
         with:
           path: add-issue-templates
-          ref: add-issue-templates
+          ref: ${{ github.ref_name }}
 
       - name: Get Exercise Toolkit
         uses: actions/checkout@v4
